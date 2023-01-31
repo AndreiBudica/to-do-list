@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do-list app</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="fonts/BLOBBYCHUG.ttf" />
+    <link rel="stylesheet" href="responsive.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="title">Your to-do list for today</h1>
+      </header>
+
+      <div class="form-container">
+        <form class="adding-task-form">
+          <div class="input-container">
+            <input
+              type="text"
+              value=""
+              id="task-input"
+              placeholder="Write your task here"
+              required
+            />
+            <button type="submit" id="add-button">
+              <i class="fa-solid fa-square-plus"></i>
+            </button>
+          </div>
+          <div class="select-div">
+            <select name="todo-sort" id="dropdown" class="select">
+              <option value="All" selected>All</option>
+              <option value="Completed">Completed</option>
+              <option value="Uncompleted">Uncompleted</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <div class="todo-container"></div>
+    </main>
+  </body>
+
+  <script src="App.js"></script>
+</html>
